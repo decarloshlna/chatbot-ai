@@ -7,3 +7,46 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#eefaff, #c7efff);
+}
+
+#chatbot-toggler {
+    position: fixed;
+    bottom: 25px;
+    right: 90px;
+    border: none;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #00ACD8;
+    transition: all 0.2s ease;
+}
+
+#chatbot-toggler:hover {
+    background: #0194C3;
+}
+
+body.show-chatbot #chatbot-toggler {
+    transform: rotate(90deg);
+}
+
+#chatbot-toggler span {
+    color: #fff;
+    position: absolute;
+}
+
+body.show-chatbot #chatbot-toggler span:first-child,
+#chatbot-toggler span:last-child {
+    opacity: 0;
+}
+
+body.show-chatbot #chatbot-toggler span:last-child {
+    opacity: 1;
+}
