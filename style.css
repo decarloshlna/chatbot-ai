@@ -67,6 +67,53 @@ body.show-chatbot #chatbot-toggler span:last-child {
     transition: all 0.1s ease;
 }
 
+.chat-header {
+    display: flex;
+    align-items: center;
+    background: #00ACD8;
+    padding: 15px 22px;
+    justify-content: space-between;
+}
+
+.chat-header .header-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-info .chatbot-logo {
+    height: 35px;
+    width: 35px;
+    padding: 0;
+    fill: #00ACD8;
+    flex-shrink: 0;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.header-info .logo-text {
+    color: #fff;
+    font-size: 1.31rem;
+    font-weight: 600;
+}
+
+.chat-header #close-chatbot {
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    font-size: 1.9rem;
+    margin-right: -10px;
+    padding-top: 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    transition: 0.2s ease;
+}
+
+.chat-header #close-chatbot:hover {
+    background: #0194C3;
+}
 body.show-chatbot .chatbot-popup {
     opacity: 1;
     pointer-events: auto;
