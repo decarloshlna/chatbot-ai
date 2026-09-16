@@ -352,3 +352,10 @@ em-emoji-picker {
 body.show-emoji-picker em-emoji-picker {
     visibility: visible;
 }
+
+/* Responsive media query for mobile screens */
+@media (max-width: 520px) {
+    #chatbot-toggler {
+        right: 20px;
+        bottom: 20px;
+    }
