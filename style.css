@@ -305,3 +305,20 @@ body.show-chatbot .chatbot-popup {
 .chat-form .chat-controls button:hover {
     background: #f1f1ff;
 }
+
+.chat-form .file-upload-wrapper {
+    height: 35px;
+    width: 35px;
+    position: relative;
+}
+
+.chat-form .file-upload-wrapper :where(img, button) {
+    position: absolute;
+}
+
+.chat-form .file-upload-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
