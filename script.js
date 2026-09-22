@@ -20,3 +20,4 @@ const userData = {
 }
 
 const chatHistory = [];
+const initialInputHeight = messageInput.scrollHeight;
