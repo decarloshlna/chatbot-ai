@@ -10,3 +10,13 @@ const closeChatbot = document.querySelector("#close-chatbot");
 // API Setup
 const API_KEY = "Your_API_KEY";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/Your_Models_AI:generateContent?key=${API_KEY}`;
+
+const userData = {
+    message: null,
+    file: {
+        data: null,
+        mime_type: null
+    }
+}
+
+const chatHistory = [];
