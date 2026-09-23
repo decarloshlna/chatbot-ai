@@ -39,3 +39,12 @@ const generateBotResponse = async (incomingMessageDiv) => {
         role: "user",
         parts: [{text: userData.message }, ...(userData.file.data ? [{ inline_data: userData.file }] : [])]
     });
+
+    // API request options
+    const requestOptions = {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            contents: chatHistory
+        })
+    }
