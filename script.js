@@ -33,3 +33,9 @@ const createMessageElement = (content, ...classes) => {
 // Generate bot response using API
 const generateBotResponse = async (incomingMessageDiv) => {
     const messageElement = incomingMessageDiv.querySelector(".message-text");
+
+    // Add user message to chat history
+    chatHistory.push({
+        role: "user",
+        parts: [{text: userData.message }, ...(userData.file.data ? [{ inline_data: userData.file }] : [])]
+    });
