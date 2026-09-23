@@ -48,3 +48,9 @@ const generateBotResponse = async (incomingMessageDiv) => {
             contents: chatHistory
         })
     }
+
+    try {
+        // Fetch bot response from API
+        const response = await fetch(API_URL, requestOptions);
+        const data = await response.json();
+        if(!response.ok) throw new Error(data.error.message);
