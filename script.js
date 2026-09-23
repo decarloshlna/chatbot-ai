@@ -29,3 +29,7 @@ const createMessageElement = (content, ...classes) => {
     div.innerHTML = content;
     return div;
 }
+
+// Generate bot response using API
+const generateBotResponse = async (incomingMessageDiv) => {
+    const messageElement = incomingMessageDiv.querySelector(".message-text");
