@@ -114,3 +114,8 @@ const handleOutgoingMessage = (e) => {
 
 // Handle Enter key press for sending messages
 messageInput.addEventListener("keydown", (e) => {
+    const userMessage = e.target.value.trim();
+    if(e.key === "Enter" && userMessage && !e.shiftKey && window.innerWidth > 768) {
+        handleOutgoingMessage(e);
+    }
+})
