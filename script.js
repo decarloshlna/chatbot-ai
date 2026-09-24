@@ -58,3 +58,9 @@ const generateBotResponse = async (incomingMessageDiv) => {
         // Extract and display bot's response text
         const apiResponseText = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "$1").trim();
         messageElement.innerText = apiResponseText;
+
+        // Add bot response to chat history
+        chatHistory.push({
+            role: "model",
+            parts: [{ text: apiResponseText }]
+        });
