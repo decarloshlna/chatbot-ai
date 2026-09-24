@@ -93,3 +93,6 @@ const handleOutgoingMessage = (e) => {
     outgoingMessageDiv.querySelector(".message-text").textContent = userData.message;
     chatBody.appendChild(outgoingMessageDiv);
     chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
+
+    // Simulate bot response with thinking indicator after a delay
+    setTimeout(() => {
