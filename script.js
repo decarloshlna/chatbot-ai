@@ -64,3 +64,9 @@ const generateBotResponse = async (incomingMessageDiv) => {
             role: "model",
             parts: [{ text: apiResponseText }]
         });
+    } catch (error) {
+        //Handle error in API response
+        console.log(error);
+        messageElement.innerText = error.message;
+        messageElement.style.color = "#ff0000";
+    }
