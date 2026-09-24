@@ -111,3 +111,6 @@ const handleOutgoingMessage = (e) => {
         generateBotResponse(incomingMessageDiv);
     }, 600);
 }
+
+// Handle Enter key press for sending messages
+messageInput.addEventListener("keydown", (e) => {
