@@ -69,4 +69,10 @@ const generateBotResponse = async (incomingMessageDiv) => {
         console.log(error);
         messageElement.innerText = error.message;
         messageElement.style.color = "#ff0000";
+    } finally {
+        //Reset user's file data, removing thinking indicator and scroll chat to bottom
+        userData.file = {};
+        incomingMessageDiv.classList.remove("thinking");
+        chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
     }
+}
