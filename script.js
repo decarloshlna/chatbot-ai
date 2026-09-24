@@ -76,3 +76,11 @@ const generateBotResponse = async (incomingMessageDiv) => {
         chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
     }
 }
+
+// Handle outgoing user messages
+const handleOutgoingMessage = (e) => {
+    e.preventDefault();
+    userData.message = messageInput.value.trim();
+    messageInput.value = "";
+    fileUploadWrapper.classList.remove("file-uploaded");
+    messageInput.dispatchEvent(new Event("input"));
