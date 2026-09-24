@@ -104,3 +104,10 @@ const handleOutgoingMessage = (e) => {
                         <div class="dot"></div>
                     </div>
                 </div>`;
+
+        const incomingMessageDiv = createMessageElement(messageContent, "bot-message", "thinking");
+        chatBody.appendChild(incomingMessageDiv);
+        chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
+        generateBotResponse(incomingMessageDiv);
+    }, 600);
+}
