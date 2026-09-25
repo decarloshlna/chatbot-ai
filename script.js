@@ -119,3 +119,6 @@ messageInput.addEventListener("keydown", (e) => {
         handleOutgoingMessage(e);
     }
 })
+
+// Adjust input field height dynamically
+messageInput.addEventListener("input", () => {
