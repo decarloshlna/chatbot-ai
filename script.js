@@ -129,3 +129,5 @@ messageInput.addEventListener("input", () => {
 
 // Handle file input change and preview the selected file
 fileInput.addEventListener("change", () => {
+    const file = fileInput.files[0];
+    if(!file) return;
