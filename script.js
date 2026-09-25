@@ -143,3 +143,6 @@ fileInput.addEventListener("change", () => {
         data: base64String,
         mime_type: file.type
         }
+
+        fileInput.value = "";
+    }
