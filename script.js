@@ -126,3 +126,6 @@ messageInput.addEventListener("input", () => {
     messageInput.style.height = `${messageInput.scrollHeight}px`;
     document.querySelector(".chat-form").style.borderRadius = messageInput.scrollHeight > initialInputHeight ? "15px" : "32px";
 });
+
+// Handle file input change and preview the selected file
+fileInput.addEventListener("change", () => {
