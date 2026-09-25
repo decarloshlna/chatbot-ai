@@ -152,3 +152,6 @@ fileInput.addEventListener("change", () => {
 
 //Cancel file upload
 fileCancelButton.addEventListener("click", () => {
+    userData.file = {};
+    fileUploadWrapper.classList.remove("file-uploaded");
+});
