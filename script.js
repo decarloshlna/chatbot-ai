@@ -133,3 +133,7 @@ fileInput.addEventListener("change", () => {
     if(!file) return;
 
     const reader = new FileReader();
+    reader.onload = (e) => {
+        fileUploadWrapper.querySelector("img").src = e.target.result;
+        fileUploadWrapper.classList.add("file-uploaded");
+        const base64String = e.target.result.split(",")[1];
