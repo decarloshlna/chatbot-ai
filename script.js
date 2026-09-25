@@ -149,3 +149,6 @@ fileInput.addEventListener("change", () => {
 
     reader.readAsDataURL(file);
 });
+
+//Cancel file upload
+fileCancelButton.addEventListener("click", () => {
