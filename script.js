@@ -137,3 +137,9 @@ fileInput.addEventListener("change", () => {
         fileUploadWrapper.querySelector("img").src = e.target.result;
         fileUploadWrapper.classList.add("file-uploaded");
         const base64String = e.target.result.split(",")[1];
+
+        // Store file data in userData
+        userData.file = {
+        data: base64String,
+        mime_type: file.type
+        }
