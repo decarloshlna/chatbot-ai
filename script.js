@@ -131,3 +131,5 @@ messageInput.addEventListener("input", () => {
 fileInput.addEventListener("change", () => {
     const file = fileInput.files[0];
     if(!file) return;
+
+    const reader = new FileReader();
