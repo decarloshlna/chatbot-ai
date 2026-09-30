@@ -155,3 +155,6 @@ fileCancelButton.addEventListener("click", () => {
     userData.file = {};
     fileUploadWrapper.classList.remove("file-uploaded");
 });
+
+// Initialize emoji picker and handle emoji selection
+const picker = new EmojiMart.Picker({
