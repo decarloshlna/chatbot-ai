@@ -174,3 +174,5 @@ theme: "light",
         }
     }
 });
+
+document.querySelector(".chat-form").appendChild(picker);
