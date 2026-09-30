@@ -158,3 +158,11 @@ fileCancelButton.addEventListener("click", () => {
 
 // Initialize emoji picker and handle emoji selection
 const picker = new EmojiMart.Picker({
+theme: "light",
+    skinTonePosition: "none",
+    previewPosition: "none",
+    onEmojiSelect: (emoji) => {
+        const { selectionStart: start, selectionEnd: end } = messageInput;
+        messageInput.setRangeText(emoji.native, start, end, "end");
+        messageInput.focus();
+    },
