@@ -176,3 +176,5 @@ theme: "light",
 });
 
 document.querySelector(".chat-form").appendChild(picker);
+
+sendMessageButton.addEventListener("click", (e) => handleOutgoingMessage (e));
