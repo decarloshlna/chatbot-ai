@@ -166,3 +166,11 @@ theme: "light",
         messageInput.setRangeText(emoji.native, start, end, "end");
         messageInput.focus();
     },
+    onClickOutside: (e) => {
+        if(e.target.id === "emoji-picker") {
+            document.body.classList.toggle("show-emoji-picker");
+        } else {
+            document.body.classList.remove("show-emoji-picker");
+        }
+    }
+});
