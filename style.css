@@ -139,7 +139,7 @@ body.show-chatbot .chatbot-popup {
     align-items: center;
 }
 
-.chat-body .bot-message .bot-avatar {
+.chat-body .bot-message .material-symbols-outlined {
     height: 35px;
     width: 35px;
     padding: 1px;
