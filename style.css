@@ -143,7 +143,10 @@ body.show-chatbot .chatbot-popup {
     height: 35px;
     width: 35px;
     padding: 1px;
-    fill: #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
     margin-bottom: 2px;
     align-self: flex-end;
